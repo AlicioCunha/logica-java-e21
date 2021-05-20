@@ -1,3 +1,6 @@
+import java.util.Locale;
+import java.util.Scanner;
+
 /*
 Fazer um programa para ler as medidas da base e altura de um retângulo.
 Em seguida,  mostrar o valor da área, perímetro e diagonal deste retângulo,
@@ -13,9 +16,14 @@ Exemplo:
 public class CalculaRetangulo {
 
     public static void main(String[] args) {
+        // Configurando a entrada de dados para aceitar PONTO
+        Locale.setDefault(Locale.US);
+        Scanner scanner  = new Scanner(System.in);
 
-        double base = 5.0;
-        double altura = 4.0;
+        System.out.println("Digite o valor da base");
+        double base = scanner.nextDouble();
+        System.out.println("Digite o valor da altura");
+        double altura = scanner.nextDouble();
 
         double area = base * altura;
         double perimeto = 2 * base + 2 * altura;
