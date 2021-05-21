@@ -1,5 +1,6 @@
-import java.util.Locale;
 import java.util.Scanner;
+
+import java.util.Locale;
 
 /*
 Fazer um programa para ler as medidas da base e altura de um retângulo.
@@ -29,9 +30,8 @@ public class CalculaRetangulo {
         double perimeto = 2 * base + 2 * altura;
         double diagonal = Math.sqrt(base * base + altura * altura);
 
-        System.out.println("AREA = " + area);
-        System.out.println("PERIMETRO = " + perimeto);
-        System.out.println("DIAGONAL = " + diagonal);
-
+        System.out.printf("AREA = %.4f%n", area);
+        System.out.printf("PERIMETRO = %.4f%n",  perimeto);
+        System.out.printf("DIAGONAL = %.4f%n",  diagonal);
     }
 }
